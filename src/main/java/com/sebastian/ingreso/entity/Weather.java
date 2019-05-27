@@ -10,7 +10,6 @@ import javax.persistence.Table;
 import com.sebastian.ingreso.enums.WeatherEnum;
 
 @Entity
-@Table
 public class Weather {
 
 	@Id

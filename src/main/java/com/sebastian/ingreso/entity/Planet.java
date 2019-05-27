@@ -15,7 +15,7 @@ import com.sebastian.ingreso.enums.ClockWiseEnum;
 import com.sebastian.ingreso.util.MathUtil;
 
 @Entity
-@Table(name = "planeta")
+@Table(name = "planet")
 public class Planet {
 
 	@Id

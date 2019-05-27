@@ -6,7 +6,6 @@ public class ReportDto {
 	private int count;
 
 	public ReportDto(String key, int count) {
-		super();
 		this.key = key;
 		this.count = count;
 	}
