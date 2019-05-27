@@ -1,5 +1,7 @@
 package com.sebastian.ingreso.planet;
 
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.Matchers.greaterThan;
 import static org.junit.Assert.assertNotNull;
 
 import org.junit.Before;
@@ -22,11 +24,13 @@ public class PlanetTests {
 		planet.setAngularVelocity(1);
 		planet.setSunDistance(500d);
 		planet.setWise(ClockWiseEnum.CLOCKWISE.getId());
+		planet.setDaysOfTheYear(360);
 	}
 
 	@Test
 	public void testPlanet() {
 		assertNotNull(planet.calculateAngle(1));
+		assertThat(planet.calculateAngle(1), greaterThan(0D));
 	}
 
 }
